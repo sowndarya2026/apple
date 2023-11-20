@@ -23,6 +23,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="firstFlow" doc:id="66f99f5d-7a99-4bea-8d4d-ea84df6ae254" >
 		<http:listener doc:name="Listener" doc:id="4b454be4-7a16-4b9b-ba47-55cef2123adf" config-ref="HTTP_Listener_config2" path="/secondflow"/>
 		<logger level="INFO" doc:name="Logger" doc:id="0e097062-744f-4cbf-95ab-34bd524bc8a6" message="hey first flow"/>
+		<logger level="INFO" doc:name="Logger" doc:id="0e097062-744f-4cbf-95ab-34bd524bc8a6" message="hey fourth flow"/>
 		<flow-ref doc:name="Flow Reference" doc:id="78f5c429-c71c-4219-8e97-2911085202f6" name="secondFlow"/>
 		<flow-ref doc:name="Flow Reference" doc:id="c4342e8f-57b2-4c65-9844-58c53fb8f0d5" name="thirdFlow"/>
 	</flow>
